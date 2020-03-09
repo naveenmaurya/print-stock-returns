@@ -21,6 +21,15 @@ historical stock data downloaded from
 [Alpha Vantage](https://www.alphavantage.co/) to calculate returns
 and generate chart.
 
+## Script files
+
+1. `stock_data.py`: Stores all your buy details of stocks in the 
+`STOCK_DATA` object.
+2. `download_stock_data.py`: Run this script to download historical 
+stock data mentioned in `SYMBOL_LIST` array.
+3. `print_stock_returns.py`: Run this script to generate chart
+based for value present in variable `GENERATE_CHART_FOR`.
+
 ## How to use the script?
 
 1. Install Python 3.8 from https://www.python.org/.
