@@ -4,6 +4,7 @@ import time
 
 API_KEY = ""
 
+# List down all the symbols for which you want to download the historical stock price
 SYMBOL_LIST = ["NSE:COLPAL", "NSE:HAVELLS", "NSE:GREENPLY", "NSE:GREENPANEL"]
 
 def get_url(symbol) -> str:
