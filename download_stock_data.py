@@ -3,11 +3,8 @@ import requests
 import time
 
 API_KEY = ""
-SYMBOL_LIST = ["NSE:ABCAPITAL", "NSE:ASIANPAINT", "NSE:AUROPHARMA", "NSE:COLPAL", "NSE:DIVISLAB", "NSE:DMART",
-               "NSE:GRASIM", "NSE:GREENPANEL", "NSE:GREENPLY", "NSE:HATSUN", "NSE:HAVELLS", "NSE:HDFCBANK",
-               "NSE:HDFCLIFE", "NSE:IDFCFIRSTB", "NSE:ITC", "NSE:LTI", "NSE:LUPIN", "NSE:MARICO", "NSE:MOTHERSUMI",
-               "NSE:KANSAINER", "NSE:ORIENTREF", "NSE:PIDILITIND", "NSE:POLYCAB", "NSE:RELAXO", "NSE:SUPREMEIND",
-               "NSE:VIPIND", "NSE:ICICIBANK"]
+
+SYMBOL_LIST = ["NSE:COLPAL", "NSE:HAVELLS", "NSE:GREENPLY", "NSE:GREENPANEL"]
 
 def get_url(symbol) -> str:
     return "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=" + \
